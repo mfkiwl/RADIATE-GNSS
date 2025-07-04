@@ -133,7 +133,7 @@ In total 75 lines, each value in the format: value (number of pressure level, la
 
 In general, all kinds of NWMs can be converted into the text format described in the section above. At TU Wien, we download NWM data from the European Center for Medium-range Weather Forecasts (ECMWF), which comes in so-called .grib format. However, as this .grib files are not publicly available, we cannot distribute them, which is why all the steps written above are necessary in order to perform the ray-tracing. We are aware that the creation of these text format NWMs might be one of the major challenges of the usage of the ray-tracer.
 
-In case of ECMWF data, we create the .grib files online for the specified height levels, latitudes and longitudes and the meteorological parameters geopotential height, specific humidity and temperature. With the ECMWF-owned Fortran tool *ecCodes* we decipher the binary .grib file and use the internal function `grib_filter` to extract the data columns and write them into the text file using Bash. In case you wish to have a detailed description of how to decipher .grib files from ECMWF, please contact us by email.
+In case of ECMWF data, we create the .grib files online for the specified height levels, latitudes and longitudes and the meteorological parameters geopotential height, specific humidity and temperature. With the ECMWF-owned Fortran tool *ecCodes* we decipher the binary .grib file and use the internal function `grib_filter` to extract the data columns and write them into the text file using Bash.
 
 
 
